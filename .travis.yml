@@ -1,7 +1,9 @@
 sudo: required
 addons:
   chrome: stable
-script: 
+script:
+  - npm rebuild
+  - npm build
   - npm test
 language: node_js
 node_js:

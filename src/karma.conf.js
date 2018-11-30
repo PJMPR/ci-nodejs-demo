@@ -28,11 +28,11 @@ module.exports = function (config) {
     browsers: ['ChromeHeadless'],
     // you can define custom flags
     customLaunchers: {
-      ChromeHeadless: {
+     ChromeHeadlessNoSandbox: {
        base: 'ChromeHeadless',
        flags: ['--no-sandbox']
      }
    },
-    singleRun: false
+    singleRun: true
   });
 };
